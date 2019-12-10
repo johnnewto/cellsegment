@@ -1,0 +1,77 @@
+{
+    "version": "3.13.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "11",
+            "line_color": [
+                0,
+                0,
+                255,
+                127
+            ],
+            "fill_color": [
+                0,
+                0,
+                255,
+                127
+            ],
+            "points": [
+                [
+                    204,
+                    108
+                ],
+                [
+                    224,
+                    128
+                ]
+            ],
+            "shape_type": "circle",
+            "probability": "0"
+        },
+        {
+            "label": "11",
+            "line_color": [
+                0,
+                0,
+                255,
+                127
+            ],
+            "fill_color": [
+                0,
+                0,
+                255,
+                127
+            ],
+            "points": [
+                [
+                    288,
+                    665
+                ],
+                [
+                    308,
+                    685
+                ]
+            ],
+            "shape_type": "circle",
+            "probability": "0"
+        }
+    ],
+    "lineColor": [
+        0,
+        255,
+        0,
+        255
+    ],
+    "fillColor": [
+        255,
+        255,
+        0,
+        20
+    ],
+    "imagePath": "235443 - 3.jpg",
+    "offset": 0,
+    "imageData": null,
+    "imageHeight": 789,
+    "imageWidth": 824
+}

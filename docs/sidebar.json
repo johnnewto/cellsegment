@@ -1,10 +1,9 @@
 {
-  "Notebook": {
-    "Export to modules": "/export",
-    "Convert to html": "/export2html",
-    "Show doc": "/showdoc",
-    "Test functions": "/test",
-    "Core functions": "/core",
-    "Command line functions": "/cli"
+  "cellsegment": {
+    "Overview": "/",
+    "Core Functions": "/core",
+    "Data preparation utilities": "/dataprep",
+    "Histogram Utilities": "/histogram_utils",
+    "Example M100 Fluke Processing": "/example_data_prep_M100_Fluke"
   }
 }

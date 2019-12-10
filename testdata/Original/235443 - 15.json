@@ -1,0 +1,50 @@
+{
+    "version": "3.13.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "11",
+            "line_color": [
+                0,
+                0,
+                255,
+                127
+            ],
+            "fill_color": [
+                0,
+                0,
+                255,
+                127
+            ],
+            "points": [
+                [
+                    151,
+                    279
+                ],
+                [
+                    171,
+                    299
+                ]
+            ],
+            "shape_type": "circle",
+            "probability": "0"
+        }
+    ],
+    "lineColor": [
+        0,
+        255,
+        0,
+        255
+    ],
+    "fillColor": [
+        255,
+        255,
+        0,
+        20
+    ],
+    "imagePath": "235443 - 15.jpg",
+    "offset": 0,
+    "imageData": null,
+    "imageHeight": 796,
+    "imageWidth": 864
+}

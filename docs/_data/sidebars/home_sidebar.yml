@@ -7,24 +7,21 @@ entries:
 - folders:
   - folderitems:
     - output: web,pdf
-      title: Export to modules
-      url: /export.html
+      title: Overview
+      url: /
     - output: web,pdf
-      title: Convert to html
-      url: /export2html.html
+      title: Core Functions
+      url: /core
     - output: web,pdf
-      title: Show doc
-      url: /showdoc.html
+      title: Data preparation utilities
+      url: /dataprep
     - output: web,pdf
-      title: Test functions
-      url: /test.html
+      title: Histogram Utilities
+      url: /histogram_utils
     - output: web,pdf
-      title: Core functions
-      url: /core.html
-    - output: web,pdf
-      title: Command line functions
-      url: /cli.html
+      title: Example M100 Fluke Processing
+      url: /example_data_prep_M100_Fluke
     output: web
-    title: Notebook
+    title: cellsegment
   output: web
   title: Sidebar
