@@ -492,14 +492,13 @@ def __crop_image(jsonfn, imgfn, dest_path, size=200, op:str='', debug=False):
 #Cell
 def crop_img_dir(file_data:str, json_path:str, src_path:str, dest_path:str, number_files='all', DEBUG=False):
     """
-      crop directory of image files based on json centers and store in dest directory
-
-    :param file_data: file_data.csv
-    :param src_path: path where json files and image files to be cropped are
-    :param dest_path: Destination path to store cropped files
-    :param number_files: Number of json files to process, leave empty for all files in directory
-    :param size: pixel size of crop
-    :return: total number of cropped images
+    Crop directory of image files based on json centers and store in dest directory
+    - `file_data:`    file_data.csv
+    - `src_path:`     path where json files and image files to be cropped are
+    - `dest_path:`    Destination path to store cropped files
+    - `number_files:` Number of json files to process, leave empty for all files in directory
+    - `size:`         pixel size of crop
+    - `return:`       total number of cropped images`
     """
     if DEBUG: print (f'Debug = {DEBUG} so not saving files')
     # assert subdir in ['Train', 'Val', 'Test', None], "subdir must one of 'Train', 'Val', 'Test' or None"

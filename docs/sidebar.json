@@ -3,7 +3,10 @@
     "Overview": "/",
     "Core Functions": "/core",
     "Data preparation utilities": "/dataprep",
+    "Set Directory Locations": "/set_directories",
+    "Title": "/training_and_eval",
     "Histogram Utilities": "/histogram_utils",
-    "Example M100 Fluke Processing": "/example_data_prep_M100_Fluke"
+    "Example M100 Fluke Processing": "/example_data_prep_M100_Fluke",
+    "Example M100 Fluke Processing AM0.1-FLUKE ": "/training_M100_fluke_colab"
   }
 }

@@ -5,6 +5,12 @@ __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 index = {"progress_bar": "00_core.ipynb",
          "resize_file": "00_core.ipynb",
          "show_img": "00_core.ipynb",
+         "in_ipython": "00_core.ipynb",
+         "in_colab": "00_core.ipynb",
+         "in_notebook": "00_core.ipynb",
+         "IN_IPYTHON": "00_core.ipynb",
+         "IN_COLAB": "00_core.ipynb",
+         "IN_NOTEBOOK": "00_core.ipynb",
          "LABELS": "01_dataprep.ipynb",
          "FILENAME_TRIM": "01_dataprep.ipynb",
          "__label_colormap": "01_dataprep.ipynb",
@@ -31,12 +37,14 @@ index = {"progress_bar": "00_core.ipynb",
          "move_files_to_dir": "01_dataprep.ipynb",
          "old_move_files_to_dir": "01_dataprep.ipynb",
          "create_labels_dir": "01_dataprep.ipynb",
+         "Dirs": "02_set_directories.ipynb",
          "show_histogram": "05_histogram_utils.ipynb",
          "plot_color_histogram": "05_histogram_utils.ipynb",
          "plot_well_histograms": "05_histogram_utils.ipynb"}
 
 modules = ["core.py",
            "dataprep.py",
+           "set_directories.py",
            "histogram_utils.py"]
 
 git_url = "https://github.com/johnnewto/cellsegment/tree/master/"
