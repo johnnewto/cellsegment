@@ -19,6 +19,7 @@ class Dirs:
         obj.cropValidTxtFile =  basepath + '/Crop-200/valid.txt'
         obj.cropTrain =  basepath + '/Crop-200/Train'
         obj.cropLabel =  basepath + '/Crop-200/Label'
+        obj.cropTest =  basepath + '/Crop-200/Test'
         obj.model = basepath + '/models/'
     def __members(obj):
         return [attr for attr in dir(dirs) if not callable(getattr(dirs, attr)) and not attr.startswith("__")]

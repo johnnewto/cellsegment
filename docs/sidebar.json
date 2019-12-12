@@ -2,11 +2,12 @@
   "cellsegment": {
     "Overview": "/",
     "Core Functions": "/core",
-    "Data preparation utilities": "/dataprep",
+    "Data preparation utilities": "/dataprep_utils",
     "Set Directory Locations": "/set_directories",
-    "Title": "/training_and_eval",
+    "Model Inference Utilities": "/inference_utils",
     "Histogram Utilities": "/histogram_utils",
-    "Example M100 Fluke Processing": "/example_data_prep_M100_Fluke",
-    "Example M100 Fluke Processing AM0.1-FLUKE ": "/training_M100_fluke_colab"
+    "Example Inference Processing (M100 Fluke)": "/example_data_prep",
+    "Example - M100 Fluke Training ": "/training_example_colab",
+    "Example - Inference evaluation   ": "/evaluation_example"
   }
 }

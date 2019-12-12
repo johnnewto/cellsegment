@@ -5,7 +5,7 @@ __all__ = ['show_histogram', 'plot_color_histogram', 'plot_well_histograms']
 #Cell
 import random
 from .core import *
-from  cellsegment.dataprep import *
+from  cellsegment.dataprep_utils import *
 import json
 import shutil
 

@@ -14,22 +14,25 @@ entries:
       url: /core
     - output: web,pdf
       title: Data preparation utilities
-      url: /dataprep
+      url: /dataprep_utils
     - output: web,pdf
       title: Set Directory Locations
       url: /set_directories
     - output: web,pdf
-      title: Title
-      url: /training_and_eval
+      title: Model Inference Utilities
+      url: /inference_utils
     - output: web,pdf
       title: Histogram Utilities
       url: /histogram_utils
     - output: web,pdf
-      title: Example M100 Fluke Processing
-      url: /example_data_prep_M100_Fluke
+      title: Example Inference Processing (M100 Fluke)
+      url: /example_data_prep
     - output: web,pdf
-      title: 'Example M100 Fluke Processing AM0.1-FLUKE '
-      url: /training_M100_fluke_colab
+      title: 'Example - M100 Fluke Training '
+      url: /training_example_colab
+    - output: web,pdf
+      title: 'Example - Inference evaluation   '
+      url: /evaluation_example
     output: web
     title: cellsegment
   output: web
