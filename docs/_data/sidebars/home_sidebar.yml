@@ -10,6 +10,18 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
+      title: Example Data Prep (M100 Fluke)
+      url: /example_data_prep
+    - output: web,pdf
+      title: 'Example - M100 Fluke Training '
+      url: /training_example_colab
+    - output: web,pdf
+      title: 'Example - markup_images  '
+      url: /markup_images
+    - output: web,pdf
+      title: 'Example - Inference evaluation   '
+      url: /example_evaluation_inference
+    - output: web,pdf
       title: Core Functions
       url: /core
     - output: web,pdf
@@ -24,15 +36,6 @@ entries:
     - output: web,pdf
       title: Histogram Utilities
       url: /histogram_utils
-    - output: web,pdf
-      title: Example Inference Processing (M100 Fluke)
-      url: /example_data_prep
-    - output: web,pdf
-      title: 'Example - M100 Fluke Training '
-      url: /training_example_colab
-    - output: web,pdf
-      title: 'Example - Inference evaluation   '
-      url: /evaluation_example
     output: web
     title: cellsegment
   output: web

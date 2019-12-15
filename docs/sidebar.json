@@ -1,13 +1,14 @@
 {
   "cellsegment": {
     "Overview": "/",
+    "Example Data Prep (M100 Fluke)": "/example_data_prep",
+    "Example - M100 Fluke Training ": "/training_example_colab",
+    "Example - markup_images  ": "/markup_images",
+    "Example - Inference evaluation   ": "/example_evaluation_inference",
     "Core Functions": "/core",
     "Data preparation utilities": "/dataprep_utils",
     "Set Directory Locations": "/set_directories",
     "Model Inference Utilities": "/inference_utils",
-    "Histogram Utilities": "/histogram_utils",
-    "Example Inference Processing (M100 Fluke)": "/example_data_prep",
-    "Example - M100 Fluke Training ": "/training_example_colab",
-    "Example - Inference evaluation   ": "/evaluation_example"
+    "Histogram Utilities": "/histogram_utils"
   }
 }
