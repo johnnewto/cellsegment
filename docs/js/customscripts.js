@@ -11,7 +11,7 @@ $( document ).ready(function() {
         $( "#mysidebar" ).attr("class", "nav affix");
     }
     // activate tooltips. although this is a bootstrap js function, it must be activated this way in your theme.
-    $('[data-toggle="tooltip"]').tooltip({
+    $('[nbs_test_data-toggle="tooltip"]').tooltip({
         placement : 'top'
     });
 
@@ -26,7 +26,7 @@ $( document ).ready(function() {
 // script from http://stackoverflow.com/questions/10523433/how-do-i-keep-the-current-tab-active-with-twitter-bootstrap-after-a-page-reload
 $(function() {
     var json, tabsState;
-    $('a[data-toggle="pill"], a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+    $('a[nbs_test_data-toggle="pill"], a[nbs_test_data-toggle="tab"]').on('shown.bs.tab', function(e) {
         var href, json, parentId, tabsState;
 
         tabsState = localStorage.getItem("tabs-state");
@@ -48,7 +48,7 @@ $(function() {
     $("ul.nav.nav-pills, ul.nav.nav-tabs").each(function() {
         var $this = $(this);
         if (!json[$this.attr("id")]) {
-            return $this.find("a[data-toggle=tab]:first, a[data-toggle=pill]:first").tab("show");
+            return $this.find("a[nbs_test_data-toggle=tab]:first, a[nbs_test_data-toggle=pill]:first").tab("show");
         }
     });
 });

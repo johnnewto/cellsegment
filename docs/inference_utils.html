@@ -4,7 +4,7 @@ title: Model Inference Utilities
 keywords: fastai
 sidebar: home_sidebar
 
-summary: "Functions that are used the run a model over the test set"
+summary: "Functions that are used to markup up files with a learner"
 ---
 <!--
 
@@ -30,12 +30,6 @@ summary: "Functions that are used the run a model over the test set"
 <div class="cell border-box-sizing code_cell rendered">
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="General-Inference-Functions">General Inference Functions<a class="anchor-link" href="#General-Inference-Functions">&#182;</a></h2>
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 
 </div>
@@ -48,7 +42,7 @@ summary: "Functions that are used the run a model over the test set"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="run_inferences" class="doc_header"><code>run_inferences</code><a href="https://github.com/johnnewto/cellsegment/tree/master/cellsegment/inference_utils.py#L27" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>run_inferences</code>(<strong><code>learn</code></strong>:<code>Learner</code>, <strong><code>fnames</code></strong>:<code>list</code>, <strong><code>start</code></strong>:<code>int</code>=<em><code>0</code></em>, <strong><code>number_files</code></strong>=<em><code>20</code></em>)</p>
+<h4 id="run_inferences" class="doc_header"><code>run_inferences</code><a href="https://github.com/johnnewto/cellsegment/tree/master/cellsegment/inference_utils.py#L24" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>run_inferences</code>(<strong><code>learn</code></strong>:<code>Learner</code>, <strong><code>fnames</code></strong>:<code>list</code>, <strong><code>start</code></strong>:<code>int</code>=<em><code>0</code></em>, <strong><code>number_files</code></strong>=<em><code>20</code></em>)</p>
 </blockquote>
 <p>run inferences over a list of <code>fnames</code> using <code>learner</code></p>
 <ul>
@@ -65,6 +59,9 @@ summary: "Functions that are used the run a model over the test set"
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
 <div class="output_wrapper">
 <div class="output">
 
@@ -72,7 +69,7 @@ summary: "Functions that are used the run a model over the test set"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="plot_inferences" class="doc_header"><code>plot_inferences</code><a href="https://github.com/johnnewto/cellsegment/tree/master/cellsegment/inference_utils.py#L47" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>plot_inferences</code>(<strong><code>preds</code></strong>:<code>List</code>, <strong><code>df</code></strong>:<code>DataFrame</code>, <strong><code>src_path</code></strong>:<code>Path</code>=<em><code>PosixPath('.')</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>start</code></strong>:<code>int</code>=<em><code>0</code></em>, <strong><code>rows</code></strong>:<code>int</code>=<em><code>4</code></em>, <strong><code>cols</code></strong>:<code>int</code>=<em><code>5</code></em>)</p>
+<h4 id="plot_inferences" class="doc_header"><code>plot_inferences</code><a href="https://github.com/johnnewto/cellsegment/tree/master/cellsegment/inference_utils.py#L44" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>plot_inferences</code>(<strong><code>preds</code></strong>:<code>List</code>, <strong><code>df</code></strong>:<code>DataFrame</code>, <strong><code>src_path</code></strong>:<code>Path</code>=<em><code>PosixPath('.')</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>start</code></strong>:<code>int</code>=<em><code>0</code></em>, <strong><code>rows</code></strong>:<code>int</code>=<em><code>4</code></em>, <strong><code>cols</code></strong>:<code>int</code>=<em><code>5</code></em>)</p>
 </blockquote>
 <p>Plot test images with auto markup labels</p>
 
@@ -131,7 +128,61 @@ summary: "Functions that are used the run a model over the test set"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="preds_to_df" class="doc_header"><code>preds_to_df</code><a href="https://github.com/johnnewto/cellsegment/tree/master/cellsegment/inference_utils.py#L129" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>preds_to_df</code>(<strong><code>preds</code></strong>:<code>List</code>, <strong><code>col_headings</code></strong>:<code>List</code>, <strong><code>df</code></strong>:<code>DataFrame</code>)</p>
+<h4 id="get_region_props" class="doc_header"><code>get_region_props</code><a href="https://github.com/johnnewto/cellsegment/tree/master/cellsegment/inference_utils.py#L73" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_region_props</code>(<strong><code>raw_pred</code></strong>:<code>tensor</code>, <strong><code>layer</code></strong>:<code>int</code>, <strong><code>min_conf</code></strong>:<code>float</code>=<em><code>0.2</code></em>, <strong><code>min_area</code></strong>:<code>int</code>=<em><code>100</code></em>)</p>
+</blockquote>
+<p>return all the region properties of a prediction layer filtered by min confidence and min area</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="calc_probs" class="doc_header"><code>calc_probs</code><a href="https://github.com/johnnewto/cellsegment/tree/master/cellsegment/inference_utils.py#L96" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>calc_probs</code>(<strong><code>raw_pred</code></strong>:<code>tensor</code>)</p>
+</blockquote>
+<p>Calculate the probabilities from a raw prediction  <code>raw_pred</code>
+by finding the average value of all the pixels within a region
+This assumes that there is only one cell in the image</p>
+<ul>
+<li><code>raw_pred</code>: the raw predictions from the learner</li>
+<li><code>return</code>:  list of probabilities</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="preds_to_df" class="doc_header"><code>preds_to_df</code><a href="https://github.com/johnnewto/cellsegment/tree/master/cellsegment/inference_utils.py#L126" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>preds_to_df</code>(<strong><code>preds</code></strong>:<code>List</code>, <strong><code>col_headings</code></strong>:<code>List</code>, <strong><code>df</code></strong>:<code>DataFrame</code>)</p>
 </blockquote>
 <p>add the predictions to the dataframe indexed by fname</p>
 <ul>
@@ -167,9 +218,9 @@ summary: "Functions that are used the run a model over the test set"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="find_prediction_blobs" class="doc_header"><code>find_prediction_blobs</code><a href="https://github.com/johnnewto/cellsegment/tree/master/cellsegment/inference_utils.py#L150" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>find_prediction_blobs</code>(<strong><code>img</code></strong>, <strong><code>CONF</code></strong>=<em><code>0.5</code></em>, <strong><code>min_area</code></strong>=<em><code>500</code></em>, <strong><code>offset</code></strong>=<em><code>0</code></em>)</p>
+<h4 id="find_prediction_blobs" class="doc_header"><code>find_prediction_blobs</code><a href="https://github.com/johnnewto/cellsegment/tree/master/cellsegment/inference_utils.py#L147" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>find_prediction_blobs</code>(<strong><code>img</code></strong>, <strong><code>CONF</code></strong>=<em><code>0.5</code></em>, <strong><code>min_area</code></strong>=<em><code>500</code></em>, <strong><code>offset</code></strong>=<em><code>0</code></em>)</p>
 </blockquote>
-<p>plot the priction blobs on an image</p>
+<p>plot the prediction blobs on an image</p>
 
 </div>
 
@@ -191,7 +242,7 @@ summary: "Functions that are used the run a model over the test set"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="draw_labels_on_image" class="doc_header"><code>draw_labels_on_image</code><a href="https://github.com/johnnewto/cellsegment/tree/master/cellsegment/inference_utils.py#L194" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>draw_labels_on_image</code>(<strong><code>img</code></strong>, <strong><code>json</code></strong>, <strong><code>radius</code></strong>=<em><code>40</code></em>, <strong><code>offset</code></strong>=<em><code>0</code></em>)</p>
+<h4 id="draw_labels_on_image" class="doc_header"><code>draw_labels_on_image</code><a href="https://github.com/johnnewto/cellsegment/tree/master/cellsegment/inference_utils.py#L190" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>draw_labels_on_image</code>(<strong><code>img</code></strong>, <strong><code>json</code></strong>, <strong><code>radius</code></strong>=<em><code>40</code></em>, <strong><code>offset</code></strong>=<em><code>0</code></em>)</p>
 </blockquote>
 
 </div>
@@ -203,26 +254,6 @@ summary: "Functions that are used the run a model over the test set"
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="unetCountEggsInWell" class="doc_header"><code>unetCountEggsInWell</code><a href="https://github.com/johnnewto/cellsegment/tree/master/cellsegment/inference_utils.py#L231" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>unetCountEggsInWell</code>(<strong><code>learn</code></strong>, <strong><code>img</code></strong>)</p>
-</blockquote>
-
-</div>
-
-</div>
-
-</div>
-</div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
@@ -243,7 +274,7 @@ summary: "Functions that are used the run a model over the test set"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="add_cols_to_df" class="doc_header"><code>add_cols_to_df</code><a href="https://github.com/johnnewto/cellsegment/tree/master/cellsegment/inference_utils.py#L260" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>add_cols_to_df</code>(<strong><code>df</code></strong>:<code>DataFrame</code>, <strong><code>col_list</code></strong>:<code>List</code>)</p>
+<h4 id="add_cols_to_df" class="doc_header"><code>add_cols_to_df</code><a href="https://github.com/johnnewto/cellsegment/tree/master/cellsegment/inference_utils.py#L256" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>add_cols_to_df</code>(<strong><code>df</code></strong>:<code>DataFrame</code>, <strong><code>col_list</code></strong>:<code>List</code>)</p>
 </blockquote>
 <p>To dataframe <code>df</code> add columns in <code>col_list</code></p>
 <ul>
@@ -280,7 +311,7 @@ summary: "Functions that are used the run a model over the test set"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="bb_hw" class="doc_header"><code>bb_hw</code><a href="https://github.com/johnnewto/cellsegment/tree/master/cellsegment/inference_utils.py#L273" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>bb_hw</code>(<strong><code>a</code></strong>)</p>
+<h4 id="bb_hw" class="doc_header"><code>bb_hw</code><a href="https://github.com/johnnewto/cellsegment/tree/master/cellsegment/inference_utils.py#L269" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>bb_hw</code>(<strong><code>a</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -300,7 +331,7 @@ summary: "Functions that are used the run a model over the test set"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="draw_outline" class="doc_header"><code>draw_outline</code><a href="https://github.com/johnnewto/cellsegment/tree/master/cellsegment/inference_utils.py#L275" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>draw_outline</code>(<strong><code>o</code></strong>, <strong><code>lw</code></strong>)</p>
+<h4 id="draw_outline" class="doc_header"><code>draw_outline</code><a href="https://github.com/johnnewto/cellsegment/tree/master/cellsegment/inference_utils.py#L271" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>draw_outline</code>(<strong><code>o</code></strong>, <strong><code>lw</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -320,7 +351,7 @@ summary: "Functions that are used the run a model over the test set"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="draw_rect" class="doc_header"><code>draw_rect</code><a href="https://github.com/johnnewto/cellsegment/tree/master/cellsegment/inference_utils.py#L279" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>draw_rect</code>(<strong><code>ax</code></strong>, <strong><code>b</code></strong>)</p>
+<h4 id="draw_rect" class="doc_header"><code>draw_rect</code><a href="https://github.com/johnnewto/cellsegment/tree/master/cellsegment/inference_utils.py#L275" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>draw_rect</code>(<strong><code>ax</code></strong>, <strong><code>b</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -340,7 +371,7 @@ summary: "Functions that are used the run a model over the test set"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="draw_text" class="doc_header"><code>draw_text</code><a href="https://github.com/johnnewto/cellsegment/tree/master/cellsegment/inference_utils.py#L283" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>draw_text</code>(<strong><code>ax</code></strong>, <strong><code>xy</code></strong>, <strong><code>txt</code></strong>, <strong><code>sz</code></strong>=<em><code>12</code></em>, <strong><code>color</code></strong>=<em><code>'white'</code></em>, <strong><code>valign</code></strong>=<em><code>'top'</code></em>)</p>
+<h4 id="draw_text" class="doc_header"><code>draw_text</code><a href="https://github.com/johnnewto/cellsegment/tree/master/cellsegment/inference_utils.py#L279" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>draw_text</code>(<strong><code>ax</code></strong>, <strong><code>xy</code></strong>, <strong><code>txt</code></strong>, <strong><code>sz</code></strong>=<em><code>12</code></em>, <strong><code>color</code></strong>=<em><code>'white'</code></em>, <strong><code>valign</code></strong>=<em><code>'top'</code></em>)</p>
 </blockquote>
 
 </div>
@@ -350,6 +381,12 @@ summary: "Functions that are used the run a model over the test set"
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="end">end<a class="anchor-link" href="#end">&#182;</a></h2>
+</div>
+</div>
 </div>
 </div>
  

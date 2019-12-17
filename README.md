@@ -23,8 +23,6 @@ This file will become your README and also the index of your documentation.
 ## How to use
 
 Fill me in please! Don't forget code examples:
-
-<img alt="Documentation in nbdev" width="600" caption="An example of automated documentation from the fastai library" src="nbs/images/doc_example.png">
 <div class="codecell" markdown="1">
 <div class="input_area" markdown="1">
 

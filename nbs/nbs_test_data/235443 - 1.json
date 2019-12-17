@@ -1,0 +1,50 @@
+{
+  "version": "3.13.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Liver Fluke",
+      "line_color": [
+        0,
+        0,
+        255,
+        127
+      ],
+      "fill_color": [
+        0,
+        0,
+        255,
+        127
+      ],
+      "points": [
+        [
+          622.4545454545455,
+          523.8484848484848
+        ],
+        [
+          642.4545454545455,
+          543.8484848484848
+        ]
+      ],
+      "shape_type": "circle",
+      "flags": {}
+    }
+  ],
+  "lineColor": [
+    0,
+    255,
+    0,
+    255
+  ],
+  "fillColor": [
+    255,
+    255,
+    0,
+    20
+  ],
+  "imagePath": "235443 - 1.jpg",
+  "imageData": null,
+  "imageHeight": 813,
+  "imageWidth": 830,
+  "offset": 0
+}
